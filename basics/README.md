@@ -16,4 +16,7 @@ this script displays current directory contents including hidden files in long f
 ls -la
 
 this script displays directory contents in long foramt with numeric user/group IDs uncluding hidden files: 5-listfilesdigitonly
-ls -lan	
+ls -lan
+
+this script creates a directory named my_first_directory in tmp
+mkdir -p /tmp/my_first_dirctory	
