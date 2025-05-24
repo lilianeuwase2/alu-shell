@@ -5,4 +5,7 @@ this script prints the absolute path of the current working directory: o-current
 this script displays the content list of my current directory:
 
  1-listit 
-ls 	
+ls 
+this scrips changes the working directory to the user's home directory: 2-bring_me_home
+cd ~
+	
