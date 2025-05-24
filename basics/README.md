@@ -33,4 +33,6 @@ this script lists all filesven ones with names beginning with a period character
 
 this script prints the type of the file /tmp/iamafile
 
-this script creates a symbolic link to bin/ls named __ls__  
+this script creates a symbolic link to bin/ls named __ls__
+
+this script copies HTML files from the current working directory to the parent of the working directory  
