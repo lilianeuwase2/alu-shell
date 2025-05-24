@@ -25,4 +25,6 @@ this script moves file brtty from /tmp to /tmp/my_first_directory usng mv comman
 
 this script deletes the file betty which is in /tmp/my_first_directory
 
-this script deletes the directory /tmp/my_first_directory 	
+this script deletes the directory /tmp/my_first_directory 
+
+this script changes the working directory to the previous one 
