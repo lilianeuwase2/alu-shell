@@ -8,4 +8,6 @@ this script displays the content list of my current directory:
 ls 
 this scrips changes the working directory to the user's home directory: 2-bring_me_home
 cd ~
-	
+
+this script displays current directory in long format: 3-listfiles
+ls-l	
