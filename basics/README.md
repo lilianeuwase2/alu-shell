@@ -10,4 +10,7 @@ this scrips changes the working directory to the user's home directory: 2-bring_
 cd ~
 
 this script displays current directory in long format: 3-listfiles
-ls-l	
+ls-l
+
+this script displays current directory contents including hidden files in long format : 4-listmorefiles
+ls -la	
