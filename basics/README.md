@@ -13,4 +13,7 @@ this script displays current directory in long format: 3-listfiles
 ls-l
 
 this script displays current directory contents including hidden files in long format : 4-listmorefiles
-ls -la	
+ls -la
+
+this script displays directory contents in long foramt with numeric user/group IDs uncluding hidden files: 5-listfilesdigitonly
+ls -lan	
