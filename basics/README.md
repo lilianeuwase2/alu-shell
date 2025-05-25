@@ -35,4 +35,6 @@ this script prints the type of the file /tmp/iamafile
 
 this script creates a symbolic link to bin/ls named __ls__
 
-this script copies HTML files from the current working directory to the parent of the working directory  
+this script copies HTML files from the current working directory to the parent of the working directory 
+
+this script moves all files with an uppercase letter to the directory /tmp/u 
