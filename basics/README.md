@@ -21,7 +21,7 @@ ls -lan
 this script creates a directory named my_first_directory in tmp
 mkdir -p /tmp/my_first_dirctory
 
-this script moves file brtty from /tmp to /tmp/my_first_directory usng mv command
+this script moves file betty from /tmp to /tmp/my_first_directory usng mv command
 
 this script deletes the file betty which is in /tmp/my_first_directory
 
