@@ -39,4 +39,6 @@ this script copies HTML files from the current working directory to the parent o
 
 this script moves all files with an uppercase letter to the directory /tmp/u
 
-this script deletes all files in the current working directory that end with the character ~ 
+this script deletes all files in the current working directory that end with the character ~
+
+this script creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory. 
