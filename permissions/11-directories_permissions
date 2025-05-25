@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a+x $(find . -mindepth 1 -type)
+chmod a+x $(find . -mindepth 1 -type d) 
