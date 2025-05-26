@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
-#this script manages a submissions directory and creates  two files inside it
+#this script manages a submissions directory and creates two files inside it
 
-#Prompting  the user to enter a directory name
+#Prompting the user to enter a directory name
 read -p "Enter directory name:" dirname
 
 #Define the file names 
@@ -24,7 +24,7 @@ elif [[ -d "$dirname" ]]; then
        #creating the files inside the directory which already exists
 
        touch "$dirname/$file1" "$dirname/$file2"
-       echo "Files $file1 and $file2 hve been created inside the existing directory $dirname"
+       echo "Files $file1 and $file2  created inside the existing directory $dirname"
 
 #if the directory with the name entered doesn't exist
 else
@@ -34,7 +34,7 @@ else
 
 	mkdir "$dirname"
 
-	echo "Directory has been created"
+	echo "Directory created"
 
 
 #creating the files inside the directory
