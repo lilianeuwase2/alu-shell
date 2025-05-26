@@ -12,7 +12,7 @@ file2="submission2.txt"
 #Checking if there is a file with the name entered exists and is not a directory
 
 if [[ -f "$dirname" ]]; then
-       echo "Directory $dirname does not exist but has a file with the same name, error cannot proceed"
+       echo "$dirname already exists and is a file not a directory, error cannot proceed"
        echo "please choose another name for the directory or delete the existing file"
        exit 1
 
@@ -20,12 +20,15 @@ if [[ -f "$dirname" ]]; then
 
 elif [[ -d "$dirname" ]]; then
        echo "Directory $dirname exists, proceeding to create files $file1 and $file2 inside the directory $dirname"
+
        #creating the files inside the directory which already exists
-       touch "$dir_name/$file1" "$dir_name/$file2"
+
+       touch "$dirname/$file1" "$dirname/$file2"
+       echo "Files $file1 and $file2 hve been created inside the existing directory $dirname"
 
 #if the directory with the name entered doesn't exist
 else
-	echo"directory does not exist, creating the directory $dir_name with the files $file1 and $file2 inside the directory"
+	echo "Directory does not exist, creating the directory $dirname with the files $file1 and $file2 inside the directory $dirname"
 
 	#create the directory    
 
@@ -38,6 +41,6 @@ else
 
 touch "$dirname/$file1" "$dirname/$file2"
 
-echo "The files $file1 and $file2 have created"
+echo "The files $file1 and $file2 created in directory $dirname"
 
 fi
