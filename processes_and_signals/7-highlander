@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# this script display the words 
 trap 'echo "I am invincible!!!"' SIGTERM
 while true 
 do 
