@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this bash script displays lines containing the bash word which allows the user to get the PID of the bash process 
+ps -auxf | grep bash 
