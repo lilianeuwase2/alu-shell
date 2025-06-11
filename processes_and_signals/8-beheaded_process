@@ -1,0 +1,3 @@
+#!/bin/usr/env bash 
+# this script terminates the process 
+pkill -f -s SIGKILL "7-highlander"
