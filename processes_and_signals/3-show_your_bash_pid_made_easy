@@ -4,7 +4,7 @@ for pid in /proc/[0-9]*; do
 pid_number=$(basename "$pid")
 if [ -r "$pid/comm" ]; then 
    name=$(<"$pid/comm")
-       if [[ "name" == *bash* ]]; then
+       if [[ "$name" == *bash* ]]; then
           echo "$pid_number $name"
        fi
 fi
