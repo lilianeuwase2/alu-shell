@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this script sends a SiGTERM signal to the "7-highlander" process
+pkill -f "7-highlander" 
