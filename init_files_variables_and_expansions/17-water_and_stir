@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "shtbeolhc"
+echo $(echo "ibase=water; $WATER" | tr 'ewatratewa' '012345678' | bc) + $(echo "ibase=stir; $STIR" | tr 'ti.irtrtr' '012345678' | bc) | bc | tr '0123456789' 'shtbeolhc'
