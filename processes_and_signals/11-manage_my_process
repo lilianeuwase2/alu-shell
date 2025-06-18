@@ -1,0 +1,50 @@
+#!/usr/bin/env bash 
+#this script controls daemon using start, stop and restart commands 
+DAEMON_SCRIPT="($dirname "$0")/manage_my_process"
+if [ ! -f "$DAEMON_SCRIPT ]: then 
+   echo "Error: $DAEMON_SCRIPT not found." >&2
+   exit 1
+fi 
+
+start_daemon() {  
+    "$DAEMON_SCRIPT" &
+    PID=&!
+    echo $PID > /var/run/my_process.pid
+     echo "manage_my_process started"
+ }
+
+stop_daemon() {
+    "$DAEMON_SCRIPT" &
+    PID=$!
+    echo $PID > /var/run/my_process.pid
+    echo "manage_my_process started"
+}
+stop_daemon() {
+     if [ -f /var/run/my_process.pid ]; then 
+	     PID=$(cat /var/run/my_process.pid)
+	     kill "$PID" 2>/dev/null
+	     rm -f /var/run/my_process.pid
+	     echo "manage_my_process stopped"
+    else 
+	    echo "Error: PID files not found. Is the process running?" >&2
+	    exit 
+}
+
+case "$1" in  
+    start)
+	  start_daemon
+	  ;;
+    stop)
+	 stop_daemon
+	 ;;
+    restart 
+        stop_daemon
+	sleep 1
+	start_daemon 
+	echo "manage_my_process restarted"
+	;;
+    *) 
+       echo "usage : $0 {start|stop|restart)"
+       exit 1
+       ;;
+esac 
