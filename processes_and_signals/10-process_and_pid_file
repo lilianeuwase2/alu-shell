@@ -3,11 +3,10 @@
 sudo bash -c "echo$$ >/var/run/myscript.pid" 
 trap 'echo" Y U no love me?!"' SIGNIT
 trap 'echo "I hate the kill command"; sudo rm -f /var/run/myscript.pid; exit' SIGTERM 
-trap 'sudo rm -f /var/run/myscript.pid; exit'
-SIGQUIT
+trap 'sudo rm -f /var/run/myscript.pid; exit' SIGQUIT
 
 while :
 do 
-   echo "TO infinity and beyond"
+   echo "To infinity and beyond"
     sleep 2
 done 
