@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+#6-superstitious_numbers
+i=1
+while [ $i -le 20 ]
+do
+    case $i in
+        4)
+            echo -e "$i\nbad luck from China"
+            ;;
+        9)
+            echo -e "$i\nbad luck from Japan"
+            ;;
+        17)
+            echo -e "$i\nbad luck from Italy"
+            ;;
+        *)
+            echo $i
+    esac
+    ((i++))
+done
+
+7.clock
+#!/usr/bin/env bash
+# Initialize an hour counter
+hour=0
+
+# Using a while loop to display hours from 0 to 12
+while [ $hour -le 12 ]
+do
+    echo "Hour: $hour"
+
+    # Initialize a minute counter
+    minute=1
+
+    # Using a nested while loop to display minutes from 1 to 59
+    while [ $minute -le 59 ]
+    do
+        echo $minute
+        ((minute++))
+    done
+
+    ((hour++))
+done
+
+
